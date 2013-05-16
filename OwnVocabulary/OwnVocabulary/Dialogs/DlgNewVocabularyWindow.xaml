@@ -1,0 +1,21 @@
+﻿<Window x:Class="OwnVocabulary.Dialogs.DlgNewVocabularyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Create new vocabulary" Height="161" Width="250" MinHeight="138" MinWidth="250" WindowStyle="ToolWindow" WindowStartupLocation="CenterOwner" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox Name="tbName" Height="25" Margin="8,8"/>
+        <ComboBox Grid.Row="1" Margin="8,8" Name="cbLanguages">
+            <ComboBoxItem Content="Ukrainian" />
+            <ComboBoxItem Content="Russian" />
+        </ComboBox>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Right">
+            <Button Margin="5" Height="30" Width="45" Name="btnOk" Content="Add" Click="btnOk_Click" />
+            <Button Margin="5" Height="30" Width="45"  Name="btnCancel" Content="Cancel" Click="btnCancel_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

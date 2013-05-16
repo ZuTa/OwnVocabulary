@@ -1,0 +1,8 @@
+﻿<Window x:Class="OwnVocabulary.Dialogs.TestingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TestingWindow" Height="300" Width="340" xmlns:my="clr-namespace:OwnVocabulary.Controls">
+    <DockPanel>
+        <my:TestControl x:Name="testControl" Margin="10" TestFinished="testControl_TestFinished" />
+    </DockPanel>
+</Window>

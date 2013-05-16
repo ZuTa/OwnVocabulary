@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="OwnVocabulary.Controls.TestControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OwnVocabulary.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="126" d:DesignWidth="300" MinWidth="300" MinHeight="125" Loaded="UserControl_Loaded">
+    <StackPanel Margin="10" Width="auto">
+        <TextBox Name="tbPhrase" Margin="10,5" IsReadOnly="True" Text="{Binding Path=Phrase, Mode=OneWay}"  />
+        <TextBox Name="tbTranslate" Margin="10,5" TabIndex="0" />
+        <Button Name="btnNext" Content="Next" HorizontalAlignment="Right" Margin="10,15" Width="50" TabIndex="1" Click="btnNext_Click" />
+
+    </StackPanel>
+</UserControl>
